@@ -21,7 +21,10 @@ header {
     display: flex;
     height: 72px;
     width: 100%;
-    border: 2px solid red;
+    outline: 2px solid red;
+    background-color: lightcoral;
+    /* border: 2px solid red; */
+    padding: 4px;
     justify-content: space-between;
 }
 
