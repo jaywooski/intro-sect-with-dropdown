@@ -12,6 +12,37 @@
 
 }
 
+body {
+    height: 99vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    height: 72px;
+    width: 100%;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+
+logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav {
+    display: none;
+}
+
+header div {
+    margin: auto 0px;
+    padding: 5px;
+    border: 1px solid greenyellow;
+}
+
+.login {
+    display : flex;
+}
 .attribution { 
     font-size: 11px; text-align: center; 
 }
