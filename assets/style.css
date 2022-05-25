@@ -55,6 +55,10 @@ header {
     padding-bottom: 4px;
 }
 
+.login {
+    display: none;
+}
+
 /*  ----------------jumbotron------------------- */
 
 #jumbotron {
@@ -67,7 +71,15 @@ header {
     /* margin: 12px auto; */
 }
 
+#jumbotron-2 {
+    display: none;
+}
+
 nav {
+    display: none;
+}
+
+.desktop {
     display: none;
 }
 
@@ -123,7 +135,7 @@ nav {
 
 
 .login {
-    display : flex;
+    display : none;
 }
 
 /* --------------- footer ----------------- */
@@ -142,4 +154,99 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+/* media query sizes */
+@media screen and (min-width: 640px) {
+
+    .logo{
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        border: 1pt solid green;
+        width: 45%;
+        font-size: small;
+        padding: 4px;
+    }
+
+    .login {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        font-size: small;
+    }
+
+    .menu, .main, .sponsored {
+        display: none;
+    }
+
+    .main-desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* height: 0%; */
+        padding: 20px 0px;
+        text-align: left;
+        font-size: large;
+    }
+    
+    .main-desktop div {
+        margin: 4px auto;
+    }
+    
+    .main-desktop p {
+        font-size: medium;
+        line-height: 150%;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .sponsored-desktop {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .sponsored-desktop img {
+        display: flex;
+        width: 100%
+        height: fit-content;
+        margin: auto;
+    }
+    
+    .sponsored-desktop div {
+        display: flex;
+        margin: auto;
+        justify-content: flex-end;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+    .desktop-content {
+        display: block;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    
+
+    #jumbotron-2 {
+        /* height: 40%; */
+        display: block;
+    }
+
+    #jumbotron-2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #jumbotron {
+        display: none;
+    }
+    
 }
