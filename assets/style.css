@@ -26,8 +26,8 @@ p {
 body {
     height: 100vh;
     width: auto;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     background-color: var(--almost-white);
     /* -webkit-margin-start: 0px ; */
     /* -webkit-margin-collapse: collapse; */
@@ -35,7 +35,7 @@ body {
 
 /* ------------header------------------ */
 header {
-    display: flex;
+    /* display: inline-block; */
     margin: 8px 0px;
     /* border: 2px solid red; */
     padding: 12px;
@@ -160,7 +160,7 @@ footer {
 @media screen and (min-width: 640px) {
 
     .logo{
-        display: none;
+        /* display: none; */
     }
 
     #navbar {
