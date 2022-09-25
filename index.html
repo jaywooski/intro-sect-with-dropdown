@@ -35,8 +35,31 @@
         
         <!-- Menu Options -->
         <div class="menu-opts">
-          <div>Features <span><img src="./images/icon-arrow-down.svg" alt="Company Menu"></span></div>
-          <div>Company<span><img src="./images/icon-arrow-down.svg" alt="Company Menu"></span></div>
+          <div>
+            <section class="dropdown">Features</section>
+            <span id="features-drop"><img src="./images/icon-arrow-down.svg" alt="Company Menu"></span></div>
+            <ul id="features-list">
+              <li><img src="./images/icon-todo.svg">Todo List</li>
+              <li><img src="./images/icon-calendar.svg">Calendar</li>
+              <li><img src="./images/icon-reminders.svg">Reminders</li>
+              <li><img src="./images/icon-planning.svg">Planning</li>
+            </ul>
+          
+          <!-- dropdown menu: Features -->
+
+
+          <div>
+            <section class="dropdown">Company</section>
+            <span id="company-drop"><img src="./images/icon-arrow-down.svg" alt="Company Menu"></span>
+            <!-- dropdown menu: Company -->
+            <ul id="company-list">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+
+
           <div>Careers</div>
           <div>About</div>
         </div> 
@@ -44,7 +67,7 @@
         <!-- Login/Register buttons -->
         <div class="registry">
           <div>Login</div>
-          <div>Register</div>
+          <div id="register-btn">Register</div>
         </div>
       </nav>
   </div>
