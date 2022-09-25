@@ -1,13 +1,20 @@
-const navbar = document.querySelector('#navbar');
+const menuBtn = document.querySelector('.menu-btn');
+const closeBtn = document.querySelector('#close-btn')
+const navModal = document.querySelector('.nav-background');
 
-
-const turnRed = (event) => {
-    event.target.style.backgroundColor = 'red';
+const openModal = (event) => {
+    navModal.style.display = 'block';
 }
 
-const reset = (event) => {
-    event.target.style.backgroundColor = 'white';
+const closeModal = (event) => {
+    navModal.style.display = 'none';
 }
 
-navbar.addEventListener('click', turnRed)
-navbar.addEventListener('mouseleave', reset)
+window.onclick = function(event) {
+    if(event.target == navModal) {
+        navModal.style.display = 'none';
+    }
+}
+
+menuBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal)

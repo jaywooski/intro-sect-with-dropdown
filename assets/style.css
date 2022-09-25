@@ -25,9 +25,7 @@ p {
 
 body {
     height: 100vh;
-    width: auto;
-    /* display: flex; */
-    /* flex-direction: column; */
+    /* width: auto; */
     background-color: var(--almost-white);
     /* -webkit-margin-start: 0px ; */
     /* -webkit-margin-collapse: collapse; */
@@ -35,49 +33,84 @@ body {
 
 /* ------------header------------------ */
 header {
-    /* display: inline-block; */
-    margin: 8px 0px;
-    /* border: 2px solid red; */
-    padding: 12px;
+    display: flex;
     justify-content: space-between;
+    /* margin: 8px 0px; */
+    /* border: 2px solid red; */
+    padding: 15px 10px 10px;
+}
+
+.logo {
+    display: inline-block;
+    width: fit-content;
 }
 
 .logo img {
-    /* padding: 5px; */
-    /* margin: auto 0px; */
+    padding: 5px;
+}
+
+.menu-btn{
+    width: fit-content;
+    margin: auto 0;
+}
+
+/* -------------------------Modal-------------------------- */
+
+.nav-background {
+    /* display: none; undo this to make modal function!!!! */
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.nav-modal {
+    position: relative;
+    padding: 20px;
     display: flex;
-    justify-content: flex-start;
-    /* font-weight: 700; */
-    /* font-size: x-large; */
+    flex-direction: column;
+    background-color: var(--almost-white);
+    float: right;
+    height: 100%;
+    width: 55%;
+    border: 1px dotted orange;
 }
 
-.menu {
-    padding-bottom: 4px;
+.close-btn{
+    display: flex;
+    justify-content: end;
+    padding: 2px;
+}
+.menu-opts{
+
 }
 
-.login {
-    display: none;
+.registry {
+    
 }
 
-/*  ----------------jumbotron------------------- */
+/*  -----------------------jumbotron----------------------- */
 
 #jumbotron {
-    height: 40%;
+    display: flex;
+    height: 50%;
+    flex-shrink: 1;
+    max-height: 350px;
+    background-image: url('../images/image-hero-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
-#jumbotron img{
-    width: 100%;
-    height: 100%;
-    /* margin: 12px auto; */
-}
 
 #jumbotron-2 {
     display: none;
 }
 
-nav {
-    display: none;
-}
 
 .desktop {
     display: none;
@@ -86,8 +119,11 @@ nav {
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex-shrink: 1;
+    justify-content: space-between;
+    margin: 0 auto;
     height: 30%;
+    max-width: 375px;
     padding: 20px 0px;
     text-align: center;
     font-size: large;
@@ -116,6 +152,7 @@ nav {
 .sponsored {
     display: flex;
     justify-content: center;
+    margin: 15px 0;
     
 }
 
@@ -134,16 +171,12 @@ nav {
 
 
 
-.login {
-    display : none;
-}
-
 /* --------------- footer ----------------- */
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 2 rem;
 }
 
 .attribution {
