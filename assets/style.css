@@ -92,16 +92,15 @@ header {
     /* flex-direction: column; */
     /* justify-content: space-evenly; */
     /* height: 25%; */
+    margin-top: 25px;
     max-height: fit-content;
 
 }
-.menu-opts nav {
-    display: inline;
-}
 
 .menu-opts div {
+    /* display: block; */
     padding: 5px 0;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .menu-opts span {
     margin-left: 20px;
@@ -109,10 +108,19 @@ header {
 
 /* ----------------drop down menus ------------------------------------------------- */
 
-/* .dropdown { */
-    /* width: fit-content; */
-    /* border: 1px solid red; */
-/* } */
+
+
+/*--------------------------------- Javascript functionality---------------------------------- */
+
+.show {
+    display: block;
+}
+
+.collapse {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------------------------- */
 
 .dropdown {
     display: inline-block;
@@ -121,13 +129,20 @@ header {
     
 }
 
-#features-list, #company-list {
-    display: none;
-    /* position: relative; */
-    list-style-type: none;
+.feature-icon {
+
 }
 
-#features-list li, #company-list li {
+#features-list, #company-list {
+       display: flex;
+       /* display: none; */
+       flex-direction: column;
+}
+
+#features-list a, #company-list a {
+    /* display: block; */
+    /* display: none; */
+    width: 100%;
     padding: 8px;
 }
 
@@ -137,7 +152,7 @@ header {
 }
 
 #company-list {
-    /* list-style-type: none; */
+    /* display: none; */
 }
 
 .registry {

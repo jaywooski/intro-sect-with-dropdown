@@ -1,19 +1,20 @@
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('#close-btn')
 const navModal = document.querySelector('.nav-background');
-const featDown = document.querySelector('#features-drop');
-const featUp = document.querySelector('#featUp');
-const companyDrop = document.querySelector('#company-drop');
-const features = document.querySelector('#features-list');
 
+const f_icon = document.querySelector('.feature-icon');
+const c_icon = document.querySelector('.company-icon');
+
+const features = document.querySelector('#features-list');
+const aboutCompany = document.querySelector('#company-list');
 
 
 // Modal functionality
-const openModal = (event) => {
+const openModal = () => {
     navModal.style.display = 'block';
 }
 
-const closeModal = (event) => {
+const closeModal = () => {
     navModal.style.display = 'none';
 }
 
@@ -24,20 +25,29 @@ window.onclick = function(event) {
 }
 
 // Dropdown functionality
-const openFeatures = (event) => {
-    features.style.display = 'inline-block';
-    featDown.innerHTML = '<img src="./images/icon-arrow-up.svg" alt="Company Menu">'
-    featDown.id = 'featUp';
+const showFeatures = () => {
+    if(features.style.display === 'flex'){
+        features.style.display = 'none';
+    }
+    console.log('hey');
+    // else {
+    //     features.style.display === 'none';
+    // }
+
+    // console.log('heyyy')
 }
 
-const closeFeatures = (event) => {
-    console.log('click');
-    features.style.display = 'none';
-    featUp.id = 'featDown';
-    featDown.innerHTML = '<img src="./images/icon-arrow-down.svg" alt="Company Menu">';
+const showCompany = () => {
+    if(aboutCompany.style.display = 'none') {
+
+    };
+}
+
+const collapse = (event) => {
+
 }
 
 menuBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal)
-featDown.addEventListener('click', openFeatures);
-featUp.addEventListener('click', closeFeatures);
+c_icon.addEventListener('click', showCompany, false);
+f_icon.addEventListener('click', showFeatures, 'false');
