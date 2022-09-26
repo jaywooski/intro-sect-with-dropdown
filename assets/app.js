@@ -27,10 +27,12 @@ window.onclick = function(event) {
 //-------------- Mobile dropdown functionality-------------
 const showFeatures = () => {
     if(features.className === 'collapse') {
-        features.className = 'show'
+        features.className = 'show';
+        f_icon.innerHTML = '<img src="./images/icon-arrow-up.svg" alt="Company Menu">';
     }
     else if(features.className === 'show') {
-        features.className = 'collapse'
+        features.className = 'collapse';
+        f_icon.innerHTML='<img src="./images/icon-arrow-down.svg" alt="Company Menu">';
     }
 
     // console.log(features.className)
@@ -39,10 +41,12 @@ const showFeatures = () => {
 
 const showCompany = () => {
     if(aboutCompany.className === 'collapse') {
-        aboutCompany.className = 'show'
+        aboutCompany.className = 'show';
+        c_icon.innerHTML = '<img src="./images/icon-arrow-up.svg" alt="Company Menu">';
     }
     else if(aboutCompany.className === 'show') {
-        aboutCompany.className = 'collapse'
+        aboutCompany.className = 'collapse';
+        c_icon.innerHTML = '<img src="./images/icon-arrow-down.svg" alt="Company Menu">';
     }
 
     // console.log(aboutCompany.className)

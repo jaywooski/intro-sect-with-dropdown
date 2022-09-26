@@ -125,14 +125,40 @@ header {
 
 .dropdown {
     display: inline-block;
+    /* width: 100% */
     margin: 0 0;
-    padding: 0 0;
+    /* padding: 5px; */
     
 }
-.menu-item:hover {
+
+.menu-item {
+    padding: 5px;
+}
+
+/* -------------------------------------------Interactivity------------------------------------- */
+.menu-item:hover, .registry div:hover {
+    cursor: pointer;
     background-color: deepskyblue;
+    transition: ease-in-out;
+    transition-duration: 200ms;
 
 }
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+
+.btn:active, #more-info:active, .registry div:active {
+    background-color: var(--medium-grey);
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
 
 .feature-icon {
     
@@ -177,6 +203,7 @@ header {
     padding: 4px 0;
     margin: 0 8px;
 }
+
 
 #register-btn {
     border: 2px solid var(--almost-black);
@@ -241,6 +268,7 @@ header {
     font-size: small;
     border-radius: 12px;
 }
+
 
 .sponsored {
     display: flex;

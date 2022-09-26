@@ -16,11 +16,11 @@
   <header>
     
     <!-- image goes here -->
-    <div class="logo">
+    <div class="logo btn" href="#">
       <img src="./images/logo.svg" alt="home">
     </div>
 
-    <div class="menu-btn">
+    <div id="open-menu" class="menu-btn btn">
       <img src="./images/icon-menu.svg" alt="open menu">
     </div>
   </header>
@@ -31,7 +31,7 @@
     <!-- Nav bar here  -->
       <nav class="nav-modal">
         <!-- Close button -->
-        <div class="close-btn"><img id="close-btn" src="./images/icon-close-menu.svg" alt="Close menu"></div>
+        <div class="close-btn"><img id="close-btn" class="btn" src="./images/icon-close-menu.svg" alt="Close menu"></div>
         
         <!-- Menu Options -->
         <div class="menu-opts">
@@ -44,34 +44,34 @@
           
           <!-- dropdown menu: Features -->
             <div class="collapse" id="features-list">
-              <a><img src="./images/icon-todo.svg">Todo List</a>
-              <a><img src="./images/icon-calendar.svg">Calendar</a>
-              <a><img src="./images/icon-reminders.svg">Reminders</a>
-              <a><img src="./images/icon-planning.svg">Planning</a>
+              <a class="menu-item"><img src="./images/icon-todo.svg">Todo List</a>
+              <a class="menu-item"><img src="./images/icon-calendar.svg">Calendar</a>
+              <a class="menu-item"><img src="./images/icon-reminders.svg">Reminders</a>
+              <a class="menu-item"><img src="./images/icon-planning.svg">Planning</a>
             </div>
           
             <!-- Company dropdown menu toggle -->
-            <div>
+            <div class="menu-item">
               <section class="dropdown">Company</section>
               <span class="company-icon"><img src="./images/icon-arrow-down.svg" alt="Company Menu"></span>
             </div>
             
             <!-- dropdown menu: Company -->
             <div class="collapse" id="company-list">
-              <a>History</a>
-              <a>Our Team</a>
-              <a>Blog</a>
+              <a class="menu-item">History</a>
+              <a class="menu-item">Our Team</a>
+              <a class="menu-item">Blog</a>
             </div>
 
           <!-- Other menu items -->
-          <div>Careers</div>
-          <div>About</div>
+          <div class="menu-item ">Careers</div>
+          <div class="menu-item ">About</div>
         </div> 
         
         <!-- Login/Register buttons -->
         <div class="registry">
-          <div>Login</div>
-          <div id="register-btn">Register</div>
+          <div class="btn">Login</div>
+          <div id="register-btn" class="btn">Register</div>
         </div>
       </nav>
   </div>
@@ -88,7 +88,7 @@
       Get your team in sync, no matter your location. Streamline processes, 
       create team rituals, and watch productivity soar.
     </p>
-    <div id="more-info">Learn more</div>
+    <div id="more-info" class="btn">Learn more</div>
   </div>
 
   <div class="sponsored">
@@ -108,7 +108,7 @@
           Get your team in sync, no matter your location. Streamline processes, 
           create team rituals, and watch productivity soar.
         </p>
-        <div id="more-info">Learn more</div>
+        <div id="more-info" class="btn">Learn more</div>
       </div>
     
       <div class="sponsored-desktop">
