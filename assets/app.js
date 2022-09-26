@@ -24,30 +24,41 @@ window.onclick = function(event) {
     }
 }
 
-// Dropdown functionality
+//-------------- Mobile dropdown functionality-------------
 const showFeatures = () => {
-    if(features.style.display === 'flex'){
-        features.style.display = 'none';
+    if(features.className === 'collapse') {
+        features.className = 'show'
     }
-    console.log('hey');
-    // else {
-    //     features.style.display === 'none';
-    // }
+    else if(features.className === 'show') {
+        features.className = 'collapse'
+    }
 
-    // console.log('heyyy')
+    // console.log(features.className)
 }
 
-const showCompany = () => {
-    if(aboutCompany.style.display = 'none') {
 
-    };
+const showCompany = () => {
+    if(aboutCompany.className === 'collapse') {
+        aboutCompany.className = 'show'
+    }
+    else if(aboutCompany.className === 'show') {
+        aboutCompany.className = 'collapse'
+    }
+
+    // console.log(aboutCompany.className)
 }
 
 const collapse = (event) => {
 
 }
 
+// Desktop dropdown functionality
+
+
+
+
+// -------------------Event listeners---------------------- 
 menuBtn.addEventListener('click', openModal);
 closeBtn.addEventListener('click', closeModal)
-c_icon.addEventListener('click', showCompany, false);
-f_icon.addEventListener('click', showFeatures, 'false');
+c_icon.addEventListener('click', showCompany);
+f_icon.addEventListener('click', showFeatures);
