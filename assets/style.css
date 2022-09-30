@@ -177,20 +177,7 @@ header {
 /* ---------------------------------------------------------------------------------------------- */
 
 
-.feature-icon {
-    
-}
-
-#features-list, #company-list {
-       /* display: flex; */
-       /* display: none; */
-       /* flex-direction: column; */
-}
-
 #features-list a {
-    /* display: block; */
-    /* display: none; */
-    /* width: 100%; */
     padding: 10px;
 }
 
@@ -201,10 +188,6 @@ header {
 #features-list img, #company-list img {
     padding: 2px;
     margin-right: 10px;
-}
-
-#company-list {
-    
 }
 
 .registry {
@@ -304,9 +287,7 @@ header {
 
 .sponsored div {
     display: flex;
-    
     margin: auto;
-    /* border: 4pt dotted goldenrod; */
 }
 
 
@@ -340,7 +321,6 @@ footer {
 
     /* headerand && nav bar stylings */
     header {
-        /* outline: 1px red solid; */
         display: flex;
     }
 
@@ -356,11 +336,6 @@ footer {
         display: flex;
         justify-content: space-around;
         width: auto;
-        /* position: relative; */
-        /* bottom: 15px; */
-        /* align-items: flex-start; */
-        /* background-color: aqua; */
-        /* margin-left: 30px; */
     }
 
     .nav-desktop div {
@@ -418,7 +393,6 @@ footer {
 
     .menu-dropdown-dt {
         border-radius: 4px;
-        /* margin: 5px; */
         box-shadow: 15px;
         display: flex;
         flex-direction: column;
@@ -431,7 +405,6 @@ footer {
 
     .menu-dropdown-dt-2 {
         border-radius: 4px;
-        /* margin: 5px; */
         box-shadow: 15px;
         display: flex;
         flex-direction: column;
@@ -448,7 +421,6 @@ footer {
     }
 
     .menu-dropdown-dt a {
-        /* text-align: center; */
         display: flex;
         align-items: center;
     }
@@ -457,16 +429,11 @@ footer {
     .desktop {
         display: flex;
         justify-content: flex-end;
-        /* align-items: center; */
-        /* outline: 1px solid green; */
         width: 100%;
         height: 80vh;
-        /* padding: 0 8px; */
     }
 
     .desktop-content {
-        /* display: flex; */
-        /* border: 1px solid purple; */
         width: 40%;
         height: auto;
     }
@@ -475,34 +442,25 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
         height: 100%;
         max-height: 500px;
         width: 100%;
-        /* margin: auto 0; */
-        /* margin: 0 auto; */
-        /* background-color: brown; */
     }
 
     .main-desktop div {
         padding-bottom: 10% ;
-        /* display: flex; */
         flex-direction: column;
         justify-content: center;
-        /* border: 1px solid yellow; */
         height: fit-content;
 
     }
 
     .main-desktop h1 {
         font-size: 60px;
-        /* border: 2px solid turquoise; */
         height: fit-content;
-        /* padding-bottom: 40px; */
     }
 
     .main-desktop p {
-        /* width: 70%; */
         font-size: 15px;
         line-height: 25px;
     }
@@ -522,7 +480,6 @@ footer {
         justify-content: space-between;
         width: 100%;
         max-width: 480px;
-        /* background-color: aquamarine; */
     }
 
     .sponsored-desktop img {
@@ -538,7 +495,6 @@ footer {
     #jumbotron-2 {
         display: block;
         margin: 0 45px;
-        /* outline: 1px solid red; */
         width: 40%;
         height: 100%;
         background-image: url('../images/image-hero-desktop.png');
@@ -552,7 +508,25 @@ footer {
 /* 1400px screen */
 @media screen and (min-width: 1400px) {
 
+    .big-screen {
+        margin-left: 80px;
+    }
     
 }
 
+/* 1800px screen */
+@media screen and (min-width: 1800px) {
+
+    .big-screen {
+        margin-left: 200px;
+    }
+    
+}
+
+/* 2560px screen */
+@media screen and (min-width: 2560px) {
+    .big-screen {
+        margin-left: 300px;
+    }
+}
 
