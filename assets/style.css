@@ -14,6 +14,7 @@
 
 a {
     text-decoration: none;
+    color: var(--almost-black);
 }
 
 *{
@@ -83,7 +84,7 @@ header {
     float: right;
     height: 100%;
     width: 55%;
-    border: 1px dotted orange;
+    /* border: 1px dotted orange; */
 }
 
 .nav-desktop, .registry-desktop {
@@ -145,6 +146,10 @@ header {
 
 .menu-item {
     padding: 5px;
+}
+
+.menu-item-desktop {
+    display: none;
 }
 
 /* -------------------------------------------Interactivity------------------------------------- */
@@ -335,51 +340,116 @@ footer {
 
     /* headerand && nav bar stylings */
     header {
-        outline: 1px red solid;
+        /* outline: 1px red solid; */
         display: flex;
     }
 
     .logo-desktop{
-        display: inline-block;
-        width: fit-content;
-    }
-
-    /* .nav-desktop {
-        display: inline-flex;
-        position: relative;
-        bottom: 15px;
-        align-items: flex-start;
-        background-color: aqua;
-        margin-left: 30px;
-    } */
-
-    .nav-desktop a {
-        margin: 0 8px;
-        font-size: 18px;
-    }
-
-    .nav-desktop span {
-        position: relative;
-        top: 2px;
-    }
-
-    .registry-desktop {
         display: block;
-    }
-
-    .registry-desktop a {
-        padding: 5px;
-        border: 1px solid blue;
-    }
-
-    .menu-opts {
+        padding-right: 5%;
+        position: relative;
+        top: 8px;
         
     }
 
+    .nav-desktop {
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+        /* position: relative; */
+        /* bottom: 15px; */
+        /* align-items: flex-start; */
+        /* background-color: aqua; */
+        /* margin-left: 30px; */
+    }
+
+    .nav-desktop div {
+        font-size: 15px;
+        padding: 0 10px; 
+    }
+
+    .nav-background-desktop {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .nav-background-desktop-2 {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .registry-desktop {
+        display: flex;
+
+    }
+
+    .registry-desktop a {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+
+    #reg-btn-dt {
+        border: 1px solid var(--almost-black);
+        border-radius: 12px;
+    }
+
     .menu-item-desktop {
-        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-item-desktop span {
         position: relative;
-        top: 2px;
+        bottom: 2px;
+    }
+
+    .menu-dropdown-dt {
+        border-radius: 4px;
+        /* margin: 5px; */
+        box-shadow: 15px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--almost-white);
+        width: fit-content;
+        position: fixed;
+        left: 80px;
+        top: 50px;
+    }
+
+    .menu-dropdown-dt-2 {
+        border-radius: 4px;
+        /* margin: 5px; */
+        box-shadow: 15px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--almost-white);
+        width: fit-content;
+        position: fixed;
+        left: 230px;
+        top: 50px;
+    }
+
+
+    .menu-dropdown-dt img, .menu-dropdown-dt-2 a {
+        padding: 8px;
+    }
+
+    .menu-dropdown-dt a {
+        /* text-align: center; */
+        display: flex;
+        align-items: center;
     }
 
     /* div side 1 with headings and caption and footer */
