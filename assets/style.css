@@ -397,7 +397,8 @@ footer {
 
     .registry-desktop a {
         padding: 8px 20px;
-        font-size: 16px;
+        font-size: 15px;
+        margin: 0 5px;
     }
 
     #reg-btn-dt {
