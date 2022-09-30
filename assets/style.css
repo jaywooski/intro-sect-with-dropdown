@@ -12,6 +12,10 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -44,6 +48,9 @@ header {
     display: inline-block;
     width: fit-content;
 }
+.logo-desktop {
+    display: none;
+}
 
 .logo img {
     padding: 5px;
@@ -57,7 +64,7 @@ header {
 /* -------------------------Modal-------------------------- */
 
 .nav-background {
-    /* display: none; undo this to make modal function!!!! */
+    display: none; /*undo this to make modal function!!!! */
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
     right: 0;
@@ -78,6 +85,11 @@ header {
     width: 55%;
     border: 1px dotted orange;
 }
+
+.nav-desktop, .registry-desktop {
+    display: none;
+}
+
 
 .close-btn{
     display: flex;
@@ -280,6 +292,7 @@ header {
 
 .sponsored img {
     width: 15%;
+    max-width: 85px;
     height: fit-content;
     margin: auto;
 }
@@ -312,70 +325,140 @@ footer {
 }
 
 /* media query sizes */
-@media screen and (min-width: 640px) {
+/* --------------- 1024px screen--------------- */
+@media screen and (min-width: 1024px) {
 
-    #open-menu, .nav-background, #jumbotron, .main, .sponsored {
+    #open-menu, .logo, .nav-background, #jumbotron, .main, .sponsored {
         display: none;
     }
     
 
     /* headerand && nav bar stylings */
     header {
-        border: 1px red solid;
+        outline: 1px red solid;
+        display: flex;
+    }
+
+    .logo-desktop{
+        display: inline-block;
+        width: fit-content;
+    }
+
+    /* .nav-desktop {
+        display: inline-flex;
+        position: relative;
+        bottom: 15px;
+        align-items: flex-start;
+        background-color: aqua;
+        margin-left: 30px;
+    } */
+
+    .nav-desktop a {
+        margin: 0 8px;
+        font-size: 18px;
+    }
+
+    .nav-desktop span {
+        position: relative;
+        top: 2px;
+    }
+
+    .registry-desktop {
+        display: block;
+    }
+
+    .registry-desktop a {
+        padding: 5px;
+        border: 1px solid blue;
     }
 
     .menu-opts {
         
     }
 
+    .menu-item-desktop {
+        padding: 5px;
+        position: relative;
+        top: 2px;
+    }
+
     /* div side 1 with headings and caption and footer */
     .desktop {
         display: flex;
-        justify-content: space-around;
-        border: 2px solid green;
+        justify-content: flex-end;
+        /* align-items: center; */
+        /* outline: 1px solid green; */
         width: 100%;
-        height: 80%;
-        padding: 0 8px;
+        height: 80vh;
+        /* padding: 0 8px; */
     }
 
     .desktop-content {
-        display: block;
-        flex-direction: column;
-        border: 2px solid purple;
-        width: 50%;
-        height: 100%;
+        /* display: flex; */
+        /* border: 1px solid purple; */
+        width: 40%;
+        height: auto;
     }
 
     .main-desktop {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 350px;
-        margin: 140px 0;
+        justify-content: center;
+        /* align-items: center; */
+        height: 100%;
+        max-height: 500px;
+        width: 100%;
+        /* margin: auto 0; */
+        /* margin: 0 auto; */
+        /* background-color: brown; */
+    }
+
+    .main-desktop div {
+        padding-bottom: 10% ;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid yellow; */
+        height: fit-content;
+
     }
 
     .main-desktop h1 {
-        display: block;
-        font-size: 55px;
-        width: %;
-        padding: 0 auto;
-        border: 2px solid turquoise;
+        font-size: 60px;
+        /* border: 2px solid turquoise; */
+        height: fit-content;
+        /* padding-bottom: 40px; */
     }
 
-    #more-info {
+    .main-desktop p {
+        /* width: 70%; */
+        font-size: 15px;
+        line-height: 25px;
+    }
 
+    #more-info-desktop{
+        width: 25%;
+        max-width: 130px;
+        padding: 12px 2px ;
     }
 
     .sponsored-desktop {
+        margin-right: auto;
         display: flex;
-        height: 20px;
+        position: relative;
+        top: 40px;
+        height: 5%;
         justify-content: space-between;
-        
+        width: 100%;
+        max-width: 480px;
+        /* background-color: aquamarine; */
     }
 
     .sponsored-desktop img {
         width: auto;
+        max-width: 85px;
         height: 20px;
+        padding: 2px;
     }
 
     
@@ -383,13 +466,22 @@ footer {
 
     #jumbotron-2 {
         display: block;
-        border: 1px solid red;
-        width: 550px;
+        margin: 0 45px;
+        /* outline: 1px solid red; */
+        width: 40%;
         height: 100%;
         background-image: url('../images/image-hero-desktop.png');
         background-size: contain;
+        background-position: center;
         background-repeat: no-repeat;
     }
 
     
 }
+/* 1400px screen */
+@media screen and (min-width: 1400px) {
+
+    
+}
+
+
